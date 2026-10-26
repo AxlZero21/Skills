@@ -1,6 +1,6 @@
 # Skills
 
-![skills](https://img.shields.io/badge/skills-29-4d6bfe?style=flat-square)
+![skills](https://img.shields.io/badge/skills-100%2B-4d6bfe?style=flat-square)
 ![format](https://img.shields.io/badge/format-markdown-0d0d0d?style=flat-square)
 ![works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Cursor%20%7C%20Windsurf%20%7C%20Codex-6b7280?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-16a34a?style=flat-square)
@@ -29,60 +29,139 @@ They're not documentation for people. They're instructions for machines — shor
 
 | Skill | What it covers |
 |---|---|
-| [`accessibility`](accessibility/SKILL.md) | WCAG 2.1, screen readers, keyboard nav, focus management, ARIA. The checklist that stops you shipping something pretty and unusable. |
-| [`design-systems`](design-systems/SKILL.md) | Design tokens, component libraries, type scales, colour theory, spacing systems. |
-| [`angular-architect`](angular-architect/SKILL.md) | Angular 17+ standalone components, signals, NgRx, RxJS, routing, TestBed. Five reference files deep. |
-| [`ai-elements`](ai-elements/SKILL.md) | AI chat UI primitives — streaming text, tool approval modals, message rendering. |
-| [`animation`](animation/SKILL.md) | The 12 principles, keyframing, procedural motion, blend trees, export. |
-| [`cross-platform`](cross-platform/SKILL.md) | React Native and Flutter conventions, native modules, shared state. |
-| [`android-development`](android-development/SKILL.md) | Kotlin, Compose, MVVM, Hilt, Material 3, Play Store submission. |
-| [`dashboard-builder`](dashboard-builder/SKILL.md) | Next.js dashboards on top of proxy APIs. Design by reference, verify with screenshots. |
+| `accessibility` | WCAG 2.1, screen readers, keyboard nav, focus, ARIA. The checklist that stops you shipping something pretty and unusable. |
+| `design-systems` | Design tokens, component libraries, type scales, colour, spacing. |
+| `angular-architect` | Angular 17+ standalone components, signals, NgRx, RxJS, routing, TestBed. |
+| `react-expert` | React 19, Server Components, hooks, state management. |
+| `nextjs-gen-ui` | Generative UI with Server Components and streaming AI responses. |
+| `r3f-best-practices` | React Three Fiber — the `useFrame` and Zustand traps. |
+| `ai-elements` | AI chat UI primitives — streaming text, tool approval modals. |
+| `vercel-next-best-practices` | Next.js 15+ App Router, RSC boundaries, async params. |
+| `animation` | The 12 principles, keyframing, procedural motion, blend trees. |
+| `cross-platform` | React Native and Flutter conventions, native bridges. |
+| `android-development` | Kotlin, Compose, MVVM, Hilt, Material 3. |
+| `ios-development` | Swift, SwiftUI, async/await, App Store submission. |
+| `flutter-expert` | Flutter 3, Riverpod, GoRouter, DevTools profiling. |
+| `react-native-expert` | RN + Expo, list performance, navigation. |
+| `swift-expert` | Swift 5.9+, `@Observable`, actors, protocol-oriented design. |
+| `javascript-pro` | ES2023+, async, ESM, memory leaks. |
+| `dashboard-builder` | Next.js dashboards on proxy APIs — design by reference, verify with screenshots. |
 
-### APIs & architecture
+### Backend & APIs
 
 | Skill | What it covers |
 |---|---|
-| [`api-design`](api-design/SKILL.md) | REST conventions, response shapes, error envelopes, validation at the boundary. |
-| [`api-designer`](api-designer/SKILL.md) | Full API architecture: OpenAPI 3.1, pagination strategies, versioning, RFC 7807 errors. |
-| [`api-documentation`](api-documentation/SKILL.md) | Swagger/OpenAPI standards, interactive docs, SDK and cURL examples. |
-| [`api-discovery`](api-discovery/SKILL.md) | Capture a site's traffic, work out how it delivers data, build a typed proxy for it. Includes session-harvest and rate-limit playbooks. |
-| [`architecture-designer`](architecture-designer/SKILL.md) | ADRs, pattern trade-offs, NFR checklists, database selection, system design templates. |
-| [`cloud-architect`](cloud-architect/SKILL.md) | AWS Well-Architected, landing zones, migration paths, cost and DR planning. |
+| `api-design` | REST conventions, response shapes, validation at the boundary. |
+| `api-designer` | Full API architecture: OpenAPI 3.1, pagination, versioning, RFC 7807. |
+| `api-documentation` | Swagger/OpenAPI standards, interactive docs, SDK examples. |
+| `graphql-architect` | Schema design, Apollo Federation, DataLoader, subscriptions. |
+| `csharp-developer` | .NET 8, Minimal APIs, EF Core, Blazor, `Span<T>`, AOT. |
+| `java-architect` | Spring Boot 3.x, JPA, WebFlux, Security. |
+| `spring-boot-engineer` | Spring Boot REST, Security 6, Actuator, migrations. |
+| `python-pro` | Python 3.12+, typing, async, packaging. |
+| `golang-pro` | Idiomatic Go, concurrency, `pprof`. |
+| `rust-engineer` | Ownership, lifetimes, traits, Tokio. |
+| `php-pro` | PHP 8.3+, Laravel, Symfony, PHPStan 9. |
+| `rails-expert` | Rails 7+, Active Record, Hotwire, Sidekiq. |
+| `orleans` | Microsoft Orleans virtual actors for distributed .NET. |
+| `atlassian-mcp` | Jira and Confluence over MCP — JQL, CQL, sprints. |
+
+### Architecture & workflow
+
+| Skill | What it covers |
+|---|---|
+| `architecture-designer` | ADRs, pattern trade-offs, NFR checklists, system design. |
+| `cloud-architect` | AWS Well-Architected, landing zones, migration, cost. |
+| `api-discovery` | Capture a site's traffic, work out its transport, build a typed proxy. |
+| `app` | Turn a one-line idea into a working app. |
+| `brainstorming` | Ask before building. Vague request → real design doc. |
+| `spec-miner` | Extract precise specifications from vague requests. |
+| `subagent-driven-development` | Delegate well-scoped work and integrate results. |
+| `requesting-code-review` / `receiving-code-review` | Get useful feedback, handle it without defensiveness. |
+| `finishing-a-development-branch` | Close out a branch cleanly before merge. |
+| `team-conventions` / `fullstack-conventions` / `gamedev-conventions` | Shared conventions, enforced not suggested. |
+| `instruction-tuning` / `instruction-dashboard-tuning` | Write system instructions that actually stick. |
+| `technical-writing` | Clear docs for developers, users, stakeholders. |
 
 ### Data & databases
 
 | Skill | What it covers |
 |---|---|
-| [`data-engineering`](data-engineering/SKILL.md) | Batch vs streaming, Lambda and Kappa, ETL/ELT, storage choice, data quality. |
-| [`database-optimizer`](database-optimizer/SKILL.md) | Execution plans, index strategy, PostgreSQL and MySQL tuning, monitoring queries. |
+| `data-engineering` | Batch vs streaming, ETL/ELT, storage choice, data quality. |
+| `database-optimizer` | Execution plans, index strategy, PostgreSQL/MySQL tuning. |
+| `postgres-pro` | `EXPLAIN`, JSONB, GIN, replication, VACUUM. |
+| `sql-pro` | Window functions, CTEs, query-plan analysis. |
+| `pandas-pro` | Vectorized DataFrame work, no `iterrows()`. |
+| `spark-engineer` | PySpark, shuffle tuning, structured streaming. |
+| `statistical-analysis` | Hypothesis testing, A/B tests, time series. |
 
 ### DevOps & reliability
 
 | Skill | What it covers |
 |---|---|
-| [`devops-engineer`](devops-engineer/SKILL.md) | Dockerfiles, GitHub Actions, GitLab CI, Kubernetes, Terraform, releases, incident response. |
-| [`ci-cd-pipelines`](ci-cd-pipelines/SKILL.md) | Pipeline design across GitHub Actions, GitLab, Jenkins, Azure DevOps. Deployment patterns. |
-| [`ci-check`](ci-check/SKILL.md) | Run CI locally, then read the remote run and fix what actually broke. |
-| [`chaos-engineer`](chaos-engineer/SKILL.md) | Hypothesis-driven failure injection, blast radius control, game days, post-mortems. |
+| `devops-engineer` | Dockerfiles, CI/CD, Kubernetes, Terraform, incident response. |
+| `ci-cd-pipelines` | Pipeline design across GitHub Actions, GitLab, Jenkins, Azure DevOps. |
+| `ci-check` | Run CI locally, then read the remote run and fix what broke. |
+| `infrastructure-as-code` / `terraform-engineer` | Remote state, modules, multi-env. |
+| `chaos-engineer` | Hypothesis-driven failure injection, blast radius control. |
+| `sre-engineer` | SLOs, error budgets, golden signals, postmortems. |
+| `performance-testing` | Load, stress, spike, soak, volume testing. |
 
-### Languages & tooling
+### Testing & quality
 
 | Skill | What it covers |
 |---|---|
-| [`csharp-developer`](csharp-developer/SKILL.md) | .NET 8, Minimal APIs, EF Core, Blazor, `Span<T>`, Native AOT. |
-| [`cli-developer`](cli-developer/SKILL.md) | Argument parsing, prompts, progress, shell completions — in Node, Python and Go. |
-| [`debugging-wizard`](debugging-wizard/SKILL.md) | Systematic root-cause work. Binary search, git bisect, known bug patterns, three-fix threshold. |
-| [`debug-logs`](debug-logs/SKILL.md) | Iterative `DEBUG()` logging: hypothesise, add logs, narrow, fix, clean up. |
-| [`atlassian-mcp`](atlassian-mcp/SKILL.md) | Jira and Confluence over MCP. JQL, CQL, sprints, issue linking, auth. |
+| `test-driven-development` | Red → green → refactor, short loop. |
+| `test-master` | Unit, integration, E2E, performance, security strategy. |
+| `test-automation` | Framework choice, CI integration, flake handling. |
+| `test-frameworks` | Jest, Vitest, pytest, JUnit, RSpec patterns. |
+| `playwright-expert` | Role-based selectors, POM, trace viewer. |
+| `systematic-testing` | Bottom-up validation for multi-layer architectures. |
+| `quality-metrics` | Coverage, complexity, defect density, quality gates. |
+
+### Debugging & security
+
+| Skill | What it covers |
+|---|---|
+| `debugging-wizard` | Systematic root-cause work. Binary search, git bisect, three-fix threshold. |
+| `systematic-debugging` | The iron law: no fixes without root cause. |
+| `debug-logs` | Iterative `DEBUG()` logging: hypothesise, add logs, narrow, fix, clean up. |
+| `trailofbits-static-analysis` | CodeQL + Semgrep + SARIF, merged and deduplicated. |
+| `security-reviewer` | Audit code and infra, structured CVSS reports. |
+| `secure-coding` / `secure-code-guardian` | OWASP Top 10, auth, parameterized queries, secrets. |
+| `fullstack-guardian` | Security-focused full-stack implementation. |
+| `reverse-engineer-anything` | Understand an unfamiliar system from observable behaviour. |
 
 ### Building & creative
 
 | Skill | What it covers |
 |---|---|
-| [`app`](app/SKILL.md) | Turn a one-line idea into a working app: clarify, explore, build the API, build the dashboard. |
-| [`brainstorming`](brainstorming/SKILL.md) | Ask before building. Turns a vague request into a real design doc, with an optional visual companion. |
-| [`blender`](blender/SKILL.md) | Modelling, sculpting, rigging, Grease Pencil, export pipelines to Unity and Unreal. |
-| [`asset-optimization`](asset-optimization/SKILL.md) | Poly reduction, LODs, texture compression, draw calls, per-platform budgets. |
+| `blender` | Modelling, sculpting, rigging, Grease Pencil, export pipelines. |
+| `rigging` | Armatures, weight painting, IK/FK, deformation. |
+| `texturing` | UV mapping, PBR materials, texture baking. |
+| `asset-optimization` | Poly reduction, LODs, texture compression, draw calls. |
+| `game-developer` | Unity/Unreal systems, ECS, physics, networking. |
+| `godot` | Godot nodes, signals, resources, GDScript conventions. |
+| `omniverse` | NVIDIA Omniverse, USD, Kit extensions. |
+
+### Documents & content
+
+| Skill | What it covers |
+|---|---|
+| `anthropics-pptx` | Create, edit, QA PowerPoint decks with real design rules. |
+| `seo-best-practices` | On-page SEO, technical SEO, schema markup. |
+| `prompt-engineer` | Design, optimize, evaluate LLM prompts. |
+| `rag-architect` | Production RAG — chunking, embeddings, retrieval eval. |
+| `firecrawl-build` | Wire Firecrawl into an app: scrape, search, interact. |
+
+### Repo maintenance
+
+| Skill | What it covers |
+|---|---|
+| `rea-analysis-optimization` | Baseline, find the bottleneck, measure before/after. |
+| `rea-changelog-update` | Keep a changelog users can read. |
+| `rea-ci-tests-audit` | Audit CI for gaps and waste. |
+| `rea-tool-design` | Design tools people actually use. |
 
 ---
 
@@ -114,8 +193,6 @@ description: Angular 17+ standalone components, signals, NgRx, RxJS, routing, te
 
 The description is what decides whether the skill gets picked up at all. Write it in the words someone would actually type — the framework name, the version, the problem.
 
-Some skills add a `metadata` block with triggers and a version. Nice to have, not required.
-
 ---
 
 ## Using them
@@ -135,7 +212,7 @@ Copy the folder you need into the editor's rules directory, or paste `SKILL.md` 
 
 `SKILL.md` is plain markdown with front matter. Drop it into the system prompt, the agent's context, or whatever your harness calls it. If the model can read, it can use this.
 
-**Using one at a time** is the sane default. Installing all 29 means the model wades through 29 descriptions to find the one it needs. Copy what fits the project.
+**Installing a subset is the sane default.** 100+ skills means 100+ descriptions to wade through. Copy what fits the project.
 
 ---
 
@@ -153,7 +230,7 @@ Copy the folder you need into the editor's rules directory, or paste `SKILL.md` 
 
 Several skills are adapted from [Jeffallan's claude-skills](https://github.com/Jeffallan/claude-skills) (MIT) — Angular Architect, API Designer, Architecture Designer, Atlassian MCP, Chaos Engineer, CLI Developer, C# Developer, Database Optimizer, Debugging Wizard, DevOps Engineer, Game Developer.
 
-The `brainstorming` and `debugging-wizard` systematic-debugging material draws on [obra/superpowers](https://github.com/obra/superpowers) (MIT).
+The `brainstorming`, `systematic-debugging`, and workflow skills draw on [obra/superpowers](https://github.com/obra/superpowers) (MIT).
 
 Everything else is written for this repo.
 
