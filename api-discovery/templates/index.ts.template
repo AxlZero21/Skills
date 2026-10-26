@@ -1,0 +1,40 @@
+/**
+ * {{DOMAIN_DISPLAY}} Domain Plugin
+ *
+ * Provides API interception and proxy routes for {{ROOT_DOMAIN}}.
+ *
+ * @module domain-{{DOMAIN_NAME}}
+ */
+
+import type { DomainPlugin } from '@interceptor/browser/handler/domain-loader';
+import { {{DOMAIN_CAMEL}}InterceptorConfig } from './config';
+import { {{DOMAIN_CLASS}}Interceptor } from './interceptor';
+import { routes } from './routes';
+
+export const plugin: DomainPlugin = {
+	domainName: '{{DOMAIN_NAME}}',
+	config: {{DOMAIN_CAMEL}}InterceptorConfig,
+	routes,
+
+	createInterceptor: () => new {{DOMAIN_CLASS}}Interceptor(),
+
+	detectLoginPage: (url: string) => url.includes('{{ROOT_DOMAIN}}/login'),
+
+	onVerified: (result) => ({
+		type: '{{DOMAIN_NAME}}_verified',
+		accountNumber: result.accountNumber,
+	}),
+
+	onVerificationFailed: (error) => ({
+		type: '{{DOMAIN_NAME}}_verification_failed',
+		error,
+	}),
+
+	onLoginDetected: () => ({
+		type: '{{DOMAIN_NAME}}_login_page_detected',
+	}),
+};
+
+export { {{DOMAIN_CLASS}}Interceptor } from './interceptor';
+export { {{DOMAIN_CAMEL}}InterceptorConfig } from './config';
+export { routes } from './routes';

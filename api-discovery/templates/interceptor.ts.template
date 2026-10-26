@@ -1,0 +1,14 @@
+/**
+ * {{DOMAIN_DISPLAY}} Interceptor
+ *
+ * Extends GenericInterceptor for {{ROOT_DOMAIN}} API traffic capture.
+ */
+
+import { GenericInterceptor } from '@interceptor/browser/shared/interceptor';
+import { {{DOMAIN_CAMEL}}InterceptorConfig } from './config';
+
+export class {{DOMAIN_CLASS}}Interceptor extends GenericInterceptor {
+	constructor() {
+		super({{DOMAIN_CAMEL}}InterceptorConfig);
+	}
+}

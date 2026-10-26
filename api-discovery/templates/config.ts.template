@@ -1,0 +1,25 @@
+/**
+ * {{DOMAIN_DISPLAY}} Interceptor Configuration
+ *
+ * Captures API traffic from {{ROOT_DOMAIN}} and its subdomains.
+ */
+
+import type { InterceptorConfig } from '@interceptor/browser/shared/config';
+
+export const {{DOMAIN_CAMEL}}InterceptorConfig: InterceptorConfig = {
+	domainName: '{{DOMAIN_NAME}}',
+
+	interceptPatterns: [
+		// Add patterns discovered from traffic capture
+		// Example: 'https://api.{{ROOT_DOMAIN}}/**'
+	],
+
+	requiredHeaders: [],
+	// headerSchema is optional — omit for public APIs with no required headers.
+	// For auth-gated APIs, add: headerSchema: z.object({ 'X-Api-Key': z.string() })
+
+	baseUrls: [
+		// Add base URLs discovered from traffic capture
+		// Example: 'https://www.{{ROOT_DOMAIN}}'
+	],
+};
